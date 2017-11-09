@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardAudio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:background="?android:selectableItemBackground"
+    android:elevation="4dp">
+
+    <!--android:background="#00bcd4"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/btnTogglePlay"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_play_button"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:foregroundGravity="center_vertical"
+             />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtSongTitle"
+            android:layout_width="fill_parent"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:text="Title"
+            style="@style/TextAppearance.Regular" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtArtist"
+            android:layout_width="fill_parent"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:text="Title"
+            style="@style/TextAppearance.Light" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

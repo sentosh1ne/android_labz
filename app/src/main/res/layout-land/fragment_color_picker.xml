@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <com.marcinmoskala.arcseekbar.ArcSeekBar
+                android:id="@+id/redSeekBar"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                app:maxProgress="255"
+                app:progressBackgroundColor="@color/colorPrimary"
+                app:progressWidth="10dp"
+                app:roundEdges="true"
+                app:thumb="@drawable/custom_thumb" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtRed"
+                style="@style/TextAppearance.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content">
+
+            <com.marcinmoskala.arcseekbar.ArcSeekBar
+                android:id="@+id/greenSeekBar"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                app:maxProgress="255"
+                app:progressBackgroundColor="@color/colorPrimary"
+                app:progressWidth="10dp"
+                app:roundEdges="true"
+                app:thumb="@drawable/custom_thumb" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtGreen"
+                style="@style/TextAppearance.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <com.marcinmoskala.arcseekbar.ArcSeekBar
+                android:id="@+id/blueSeekBar"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                app:maxProgress="255"
+                app:progressBackgroundColor="@color/colorPrimary"
+                app:progressWidth="10dp"
+                app:roundEdges="true"
+                app:thumb="@drawable/custom_thumb" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtBlue"
+                style="@style/TextAppearance.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/palette"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" />
+</LinearLayout>

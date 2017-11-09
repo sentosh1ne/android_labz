@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Theme">
+        <ListPreference
+            android:title="Choose theme"
+            android:entries="@array/themes_array_entries"
+            android:entryValues="@array/themes_array"
+            android:key="themePreference" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Text">
+        <ListPreference
+            android:title="Choose font type"
+            android:entries="@array/text_styles_array_entries"
+            android:entryValues="@array/text_styles_array"
+            android:key="textPreference" />
+    </PreferenceCategory>
+</PreferenceScreen>

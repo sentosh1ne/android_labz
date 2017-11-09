@@ -1,0 +1,25 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slidingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:gravity="top"
+        sothree:umanoFadeColor="#00000000"
+        sothree:umanoOverlay="false"
+        sothree:umanoPanelHeight="0dp"
+        sothree:umanoShadowHeight="4dp">
+
+        <include layout="@layout/layout_content_audio" />
+
+        <include
+            layout="@layout/layout_dropdown_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+</android.support.design.widget.CoordinatorLayout>

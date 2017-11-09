@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/playerDropDown"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imgSongCover"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/TextAppearance.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Was he slow?" />
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtCurrentDuration"
+                style="@style/TextAppearance.Light"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seekDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+               />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtDurationMax"
+                style="@style/TextAppearance.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/btnPreviousSong"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:rotation="180"
+                android:background="@drawable/ic_fast_forward_arrows" />
+
+            <ToggleButton
+                android:id="@+id/btnPauseSong"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:textOff=""
+                android:textOn=""
+                android:textColor="#ffffff"
+                android:checked="true"
+                android:text=""
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/play_pause_button_selector" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/btnNextSong"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_fast_forward_arrows" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/btnShuffle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_shuffle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

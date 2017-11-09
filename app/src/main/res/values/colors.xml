@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00AA8D</color>
+    <color name="colorPrimaryDark">#008975</color>
+    <color name="colorAccent">#00AA8D</color>
+    <color name="blueHighlight">#60a2ff</color>
+    <color name="redHighlight">#e63e3e</color>
+
+    <array name="greenGradient">
+        <item>#007c6a</item>
+        <item>#00bf10</item>
+        <item>#00ff3c</item>
+        <item>#00ff15</item>
+    </array>
+
+    <array name="blueGradient">
+        <item>#000970</item>
+        <item>#2918e6</item>
+        <item>#3d56f7</item>
+        <item>#969eff</item>
+    </array>
+
+    <array name="redGradient">
+        <item>#700002</item>
+        <item>#e61848</item>
+        <item>#f24965</item>
+        <item>#ff96ab</item>
+    </array>
+</resources>

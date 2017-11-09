@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android_labs.iml" filepath="$PROJECT_DIR$/android_labs.iml" />
+      <module fileurl="file://F:\androidlabz\android_labs\android_labs.iml" filepath="F:\androidlabz\android_labs\android_labs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\androidlabz\android_labs\app\app.iml" filepath="F:\androidlabz\android_labs\app\app.iml" />
+    </modules>
+  </component>
+</project>

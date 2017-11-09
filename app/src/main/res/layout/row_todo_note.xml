@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="6dp"
+    android:id="@+id/cardTodo"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="?android:selectableItemBackground"
+        >
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/chDone"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.473" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtTodo"
+            style="@style/TextAppearance.Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/chDone"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Today I am gonna do this shit" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtDate"
+            style="@style/TextAppearance.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/blueHighlight"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/chDone"
+            app:layout_constraintTop_toBottomOf="@id/txtTodo"
+            tools:text="Today" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgNote"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:civ_border_width="0dp"
+                app:layout_constraintStart_toEndOf="@id/txtTodo"
+                tools:src="@mipmap/ic_launcher_round" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgImportance"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@color/blueHighlight" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
